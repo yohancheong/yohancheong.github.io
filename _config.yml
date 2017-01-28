@@ -6,9 +6,9 @@ highlighter:      pygments
 permalink:        pretty
 
 # Setup
-title:            Yohan Chung
+title:            Yohan
 tagline:          'A Jekyll theme'
-description:      'Programmer'
+description:      'coding in python & c#'
 url:              http://hyde.getpoole.com
 baseurl:          /
 
