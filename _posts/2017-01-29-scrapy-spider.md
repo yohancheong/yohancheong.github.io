@@ -17,6 +17,7 @@ class QuickScrapyItem(Item):
     link = Field()
 ```
 
+{:start="5"}
 5. Go ahead and create new file called test.py under /quick_scrapy/quick_scrapy/spiders folder. 
 * I am going to create a SPIDER to crawl web pages and scrape info in this file. Spider will define initial url e.g. https://www.seek.com.au/jobs?keywords=software+engineer. It also defines how to follow links and pagination, and how extract and parse the field. Spider must define 3 attribute name, start url, parsing method. test.py has a spider class that includes the aforementioned attributes. This class has parsing method which takes the response of page call then parse info using xpath().
 
