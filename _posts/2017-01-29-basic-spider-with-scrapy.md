@@ -58,6 +58,7 @@ start_urls = [
 
 * When / is used at the beginning of path /a, it will define an absolute path to node ‘a’ from the root. When // is used at the beginning of path //a, it will define a path to node ‘a’ from from anywhere in xml response.
 * Input `scrapy crawl jobs (spider name) -o out.json`, Scrapy will make a call to the url and the response will be parsed
+
 ```
 [
 {"link": ["/job/32678977?type=promoted&tier=no_tier&pos=1&whereid=3000&userqueryid=36d7d8b41696017af4c442da6bbf62e8-2435637&ref=beta"], "title": ["Senior Software Engineer as Tester"]},
