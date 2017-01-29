@@ -51,3 +51,7 @@ start_urls = [
 * You can easily find xpath of html element as below
 
 ![placeholder]({{ site.baseurl }}public/image/2017-01-29-scrapy-spider-1.png "Medium example image")
+
+<div class="message">
+    Application: Basic spider with scrapy is a good candidate to scrape target information under certain element path e.g. h1/a/@href without any exceptions or rules, and also retrieve information without following internal links i.e. page depth = 1 
+</div>
