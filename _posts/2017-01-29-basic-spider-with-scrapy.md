@@ -9,14 +9,14 @@ This post will explain how to create new scrapy project using command prompt and
 2. Navigate to the directory where you want to create scrapy project – cd c:/users/yohan/documents/python27/projects
 3. Input `scrapy startproject <project_name>` that generates the following structure
 .
-* scrapy.cfg
-* &lt;project_name&gt;
-    * _init__.py
-    * items.py
-    * pipelines.py
-    * settings.py
-    * spiders
-        * _init__.py
+- scrapy.cfg
+- &lt;project_name&gt;
+    - _init__.py
+    - items.py
+    - pipelines.py
+    - settings.py
+    - spiders
+        - _init__.py
 
 4. After that, if you look at ./&lt;project_name&gt; directory then you will find items.py. This will contain the class to hold the scraped information. As an example, I would like to scrape job title and link from seek.com (job listing site) then the item class will look as below in items.py 
 
@@ -57,7 +57,14 @@ start_urls = [
 ```
 
 * When / is used at the beginning of path /a, it will define an absolute path to node ‘a’ from the root. When // is used at the beginning of path //a, it will define a path to node ‘a’ from from anywhere in xml response.
-* When I run with – scrapy crawl jobs (identifier), Scrapy will make a call to the url and the response will be parsed
+* Input `scrapy crawl jobs (spider name) -o out.json`, Scrapy will make a call to the url and the response will be parsed
+```
+[
+{"link": ["/job/32678977?type=promoted&tier=no_tier&pos=1&whereid=3000&userqueryid=36d7d8b41696017af4c442da6bbf62e8-2435637&ref=beta"], "title": ["Senior Software Engineer as Tester"]},
+{"link": ["/job/32635906?type=promoted&tier=no_tier&pos=2&whereid=3000&userqueryid=36d7d8b41696017af4c442da6bbf62e8-2435637&ref=beta"], "title": ["Software Designer"]},
+{"link": ["/job/32691890?type=standard&tier=no_tier&pos=1&whereid=3000&userqueryid=36d7d8b41696017af4c442da6bbf62e8-2435637&ref=beta"], "title": ["Mid-Level Software Developer (.Net)"]},
+...]
+```
 * You can easily find xpath of html element as below
 
 ![placeholder]({{ site.baseurl }}public/image/2017-01-29-scrapy-spider-1.png "Medium example image")
