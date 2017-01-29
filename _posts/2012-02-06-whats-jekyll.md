@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-removed
 title: What's Jekyll?
 ---
 
