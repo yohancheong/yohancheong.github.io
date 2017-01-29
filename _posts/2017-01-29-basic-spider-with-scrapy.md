@@ -7,7 +7,7 @@ This post will explain how to create new scrapy project using command prompt and
 
 1. Open command prompt
 2. Navigate to the directory where you want to create scrapy project – cd c:/users/yohan/documents/python27/projects
-3. Input 'scrapy startproject <project_name>' that generates the following structure
+3. Input `scrapy startproject <project_name>` that generates the following structure
 .
 ├── scrapy.cfg
 └── <project_name>
@@ -62,7 +62,7 @@ start_urls = [
 ![placeholder]({{ site.baseurl }}public/image/2017-01-29-scrapy-spider-1.png "Medium example image")
 
 <div class="message">
-    **Application**: Basic spider with scrapy is a good candidate to scrape target information under certain element path e.g. h1/a/@href without any exceptions or rules, and also retrieve information without following internal links i.e. page depth = 1 
+    <strong>Application</strong>: Basic spider with scrapy is a good candidate to scrape target information under certain element path e.g. h1/a/@href without any exceptions or rules, and also retrieve information without following internal links i.e. page depth = 1 
 </div>
 
 See <a href="https://github.com/yohancheong/Scrapy-Spider">source code</a> 
