@@ -8,17 +8,16 @@ This post will explain how to create new scrapy project using command prompt and
 1. Open command prompt
 2. Navigate to the directory where you want to create scrapy project – cd c:/users/yohan/documents/python27/projects
 3. Input `scrapy startproject <project_name>` that generates the following structure
-```
 .
-- scrapy.cfg
-- <project_name>
-    - __init__.py
-    - items.py
-    - pipelines.py
-    - settings.py
-    - spiders
-        - __init__.py
-```
+* scrapy.cfg
+* <project_name>
+    * __init__.py
+    * items.py
+    * pipelines.py
+    * settings.py
+    * spiders
+        * __init__.py
+
 4. After that, if you look at ./<project_name> directory then you will find items.py. This will contain the class to hold the scraped information. As an example, I would like to scrape job title and link from seek.com (job listing site) then the item class will look as below in items.py 
 
 ```python
