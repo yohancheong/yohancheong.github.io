@@ -3,10 +3,10 @@ layout: post
 title: Basic Spider with Scrapy 
 ---
 
-This post will explain how to create new scrapy project using command prompt and text editor such as notepad++. Note that it assumes you have already installed scrapy package on your machine, and I am using Scrapy version 1.1.2. See steps bewlow.
+This post will explain how to create new scrapy project using command prompt and text editor such as notepad++. Note that it assumes you have already installed scrapy package on your machine, and I am using Scrapy version 1.1.2. See steps below.
 
 1. Open command prompt
-2. Navigate to the directory where you want to create scrapy project – cd c:/users/yohan/documents/python27/projects
+2. Navigate to the directory where you want to create scrapy project e.g. cd c:/users/yohan/documents/python27/projects
 3. Input `scrapy startproject <project_name>` that generates the following structure
 
 - scrapy.cfg
@@ -18,6 +18,7 @@ This post will explain how to create new scrapy project using command prompt and
     - spiders
         - _init__.py
 
+{:start="4"}
 4. After that, if you look at ./&lt;project_name&gt; directory then you will find items.py. This will contain the class to hold the scraped information. As an example, I would like to scrape job title and link from seek.com (job listing site) then the item class will look as below in items.py 
 
 ```python
@@ -57,7 +58,9 @@ start_urls = [
 ```
 
 * When / is used at the beginning of path /a, it will define an absolute path to node ‘a’ from the root. When // is used at the beginning of path //a, it will define a path to node ‘a’ from from anywhere in xml response.
-* Input `scrapy crawl jobs (spider name) -o out.json`, Scrapy will make a call to the url and the response will be parsed
+
+{:start="6"}
+6. Input `scrapy crawl jobs (spider name) -o out.json`, Scrapy will make a call to the url and the response will be parsed
 
 ```
 [
