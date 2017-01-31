@@ -24,11 +24,7 @@ This can be achieved with the help of CrawlSpider. Let's take a look at steps to
 As I am targeting all links within main body of wiki page, the rule can be as below
 
 ```python
-Rule(LinkExtractor(
-    allow="https://en.wikipedia.org/wiki/", 
-    restrict_xpaths="//div[@class='mw-body']//a"), 
-    callback='parse_page', 
-    follow=False)
+Rule(LinkExtractor(allow="https://en.wikipedia.org/wiki/", restrict_xpaths="//div[@class='mw-body']//a"), callback='parse_page', follow=False)
 ```
 
 {:start="7"}
