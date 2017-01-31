@@ -34,7 +34,6 @@ Rule(LinkExtractor(allow="https://en.wikipedia.org/wiki/", restrict_xpaths="//di
 from scrapy.contrib.spiders import CrawlSpider, Rule
 from scrapy.contrib.linkextractors import LinkExtractor
 
-
 class WikiSpider(CrawlSpider):
 
     name = 'wikipedia'
