@@ -11,7 +11,7 @@ This can be achieved with the help of CrawlSpider. Let's take a look at steps to
 2. Navigate to the directory where you want to create scrapy project e.g. cd c:/users/yohan/documents/python27/projects
 3. Input `scrapy startproject <project_name>` that generates the following structure
 4. Now I need to create a spider class and it will be resided in new ./&lt;project_name&gt;/spiders/crawlspider.py
-5. Let's say I am scraping links in wikipedia page then attributes for **WikiSpider** can be as below
+5. Let's say I am scraping links in wikipedia page then attributes for **CrawlSpider** can be as below
 * `name` is wikipedia
 * `allowed_domains` is wikipedia.org
 * `start_urls` is wikipedia page to start - https://en.wikipedia.org/wiki/Mathmetics
@@ -32,7 +32,7 @@ Rule(LinkExtractor(
 ```
 
 {:start="7"}
-7. See the entire WikiSpider below
+7. See the entire CrwalSpider below
 
 ```python
 from scrapy.contrib.spiders import CrawlSpider, Rule
@@ -46,11 +46,7 @@ class WikiSpider(CrawlSpider):
     start_urls = ["https://en.wikipedia.org/wiki/Mathmetics",]
 
     rules = (
-        Rule(LinkExtractor(
-            allow="https://en.wikipedia.org/wiki/", 
-            restrict_xpaths="//div[@class='mw-body']//a"), 
-            callback='parse_page', 
-            follow=False),
+        Rule(LinkExtractor(allow="https://en.wikipedia.org/wiki/", restrict_xpaths="//div[@class='mw-body']//a"), callback='parse_page', follow=False),
     )
 
     def parse_page(self, response):        
