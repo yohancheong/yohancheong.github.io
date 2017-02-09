@@ -44,7 +44,27 @@ class WikiSpider(CrawlSpider):
         Rule(LinkExtractor(allow="https://en.wikipedia.org/wiki/", restrict_xpaths="//div[@class='mw-body']//a"), callback='parse_page', follow=False),
     )
 
-    def parse_page(self, response):        
-        print response.xpath('//h1[@class="firstHeading"]/text()').extract()
-        return
+    def parse_page(self, response):                
+        item = WikiItem()
+        item["name"] = response.xpath('//h1[@class="firstHeading"]/text()').extract()
+        return item
 ```
+
+{:start="8"}
+8. Input `scrapy crawl wikipedia (spider name) -o out.json`, Scrapy will make a call to the url and the response will be parsed
+
+```
+[
+{"name": ["Wikipedia:Protection policy"]},
+{"name": ["Giuseppe Peano"]},
+{"name": ["Euclid's "]},
+{"name": ["Greek mathematics"]}
+...
+]
+```
+
+<div class="message">
+    <strong>Application</strong>: Crawl spider can be used to scrape information in different level of page with several consistant rules.
+</div>
+
+See <a href="https://github.com/yohancheong/Scrapy-Crawl-Spider">source code</a> 
