@@ -7,7 +7,7 @@ Lambda calculus is a language `to express function application`, which enables u
 
 * Define functions (anonymous)
 * Apply functions
-
+ 
 It is also a source of functional programming, and consists of **Syntax** (grammar) and **Symantics** (meaing) as other languages.
 
 ## Syntax
