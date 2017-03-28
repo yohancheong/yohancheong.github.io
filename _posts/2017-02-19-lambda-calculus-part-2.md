@@ -17,7 +17,7 @@ title: Lambda Calculus Pt. 2
 An expression is a combinator if it doesn't have any free variables
 
 * &lambda;x.&lambda;y.xyx combinator ? yes (The function takes x and y as parameters and do xyx)
-* &lambda;x.x ? yes
+* &lambda;x.x ? yes 
 * &lambda;z.&lambda;y.xyz ? no, since y is free
 
 ## Bound Variables

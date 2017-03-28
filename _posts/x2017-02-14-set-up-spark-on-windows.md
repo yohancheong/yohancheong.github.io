@@ -2,7 +2,7 @@
 layout: post
 title: Set Up Spark on Windows
 ---
-
+ 
 You just need to point IntelliJ to wherever Spark is located which you can do by adding them as External Libraries, to do this, 
 
 1. go to the mynewproject folder we created in the video 
