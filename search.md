@@ -1,3 +1,8 @@
+---
+layout: page
+
+---
+
 <div id="home-search" class="home">
      <script>
          (function() {
