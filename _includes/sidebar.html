@@ -7,6 +7,21 @@
         </a>
       </h3>
       <p class="lead">{{ site.description }}</p>
+
+      <!-- Search tool -->
+      <div class="grid" id="searchBar">
+          <div>
+              <div id="search">
+                  <form role="search" method="get" action="{{ site.baseurl }}//search/">
+                      <input id="searchString" name="searchString"
+                            placeholder="Learn Ionic, Be a Better Developer, etc." type="text">
+                      <input id="searchButton" name="googleSearchName" type="button" value="Search">
+                  </form>
+              </div>
+          </div>
+      </div>
+
+
     </div>
 
     <nav class="sidebar-nav">
