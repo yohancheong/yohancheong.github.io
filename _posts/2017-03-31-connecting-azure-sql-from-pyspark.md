@@ -52,4 +52,4 @@ df.show()
 only showing top 10 rows
 ```
 
-*See more: https://community.hortonworks.com/articles/59205/spark-pyspark-to-extract-from-sql-server.html*
+*See more [spark-pyspark-to-extract-from-sql-server](https://community.hortonworks.com/articles/59205/spark-pyspark-to-extract-from-sql-server.html)*
