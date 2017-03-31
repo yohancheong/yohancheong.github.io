@@ -3,7 +3,7 @@ layout: post
 title: Connecting Azure SQL through PySpark
 ---
 
-1. Download sqljdbc (https://www.microsoft.com/en-us/download/details.aspx?id=11774) 
+1. [Download sqljdbc](https://www.microsoft.com/en-us/download/details.aspx?id=11774) 
 2. Extract files in a directory c:/spark
 3. Copy & paste c:/spark/sqljdbc_6.0/enu/auth/sqljdb_auth.dll to c:/windows/system32
 4. Create test-sql.py as below
