@@ -33,7 +33,7 @@ df.show()
 5. Run cmd with driver as *spark-submit --driver-class-path c:/spark/sqljdbc_6.0/enu/jre8/sqljdbc42.jar test-sql.py*
 6. Output
 
-```
+```python
 <class 'pyspark.sql.dataframe.DataFrame'>
 +---+
 | Id|
