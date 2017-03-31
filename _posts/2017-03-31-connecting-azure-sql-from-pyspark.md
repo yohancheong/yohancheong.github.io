@@ -28,9 +28,11 @@ df = sqlContext.read.format("jdbc").options(
 
 df.show() 
 ```
+
 {:start="5"}
 5. Run cmd with driver as *spark-submit --driver-class-path c:/spark/sqljdbc_6.0/enu/jre8/sqljdbc42.jar test-sql.py*
 6. Output
+
 ```
 <class 'pyspark.sql.dataframe.DataFrame'>
 +---+
@@ -49,3 +51,5 @@ df.show()
 +---+
 only showing top 10 rows
 ```
+
+*See more: https://community.hortonworks.com/articles/59205/spark-pyspark-to-extract-from-sql-server.html*
