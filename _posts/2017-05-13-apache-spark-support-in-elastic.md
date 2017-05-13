@@ -8,7 +8,7 @@ title: Apache Spark support in Elastic
 3. Open visual studio code as administrator
 4. Create the script as below to read elastic index e.g. products/kcosmetics
 
-'''python
+```python
 from pyspark import SparkConf, SparkContext
 
 conf = SparkConf().setMaster("local").setAppName("elasticsearch-hadoop")
@@ -21,7 +21,7 @@ es_rdd = sc.newAPIHadoopRDD(
     valueClass="org.elasticsearch.hadoop.mr.LinkedMapWritable", 
     conf={ "es.resource" : "products/kcosmetics" })
 print(es_rdd.first())
-'''
+```
 
 {:start="5"}
 5. Run spark-submit --driver-class-path C:\spark\elasticsearch-hadoop-5.4.0\dist\elasticsearch-hadoop-5.4.0.jar script.py This will run the script with elasticsearch-hadoop adaptor to read/write data in elastic
