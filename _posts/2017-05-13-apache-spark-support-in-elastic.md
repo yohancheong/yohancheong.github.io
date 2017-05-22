@@ -44,8 +44,8 @@ kcosmetics_availability.saveAsNewAPIHadoopFile(
 6. Add the following lines in c:/spark/config/spark-defaults.config to use the jars
 
 ```python
-spark.driver.extraClassPath			c:/spark/external_jars/*
-spark.executor.extraClassPath		c:/spark/external_jars/*
+spark.driver.extraClassPath     c:/spark/external_jars/*
+spark.executor.extraClassPath   c:/spark/external_jars/*
 ```
 
 {:start="7"}
