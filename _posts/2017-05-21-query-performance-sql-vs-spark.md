@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Query Performance: SQL vs Spark
+title: Query Performance SQL vs Spark
 ---
 
 1. Install [AdventureWorks2014 database](https://msftdbprodsamples.codeplex.com/releases/view/125550) in local sql server
