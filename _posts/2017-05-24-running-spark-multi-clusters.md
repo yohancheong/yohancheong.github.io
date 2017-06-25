@@ -3,7 +3,7 @@ layout: post
 title: Running Spark Cluster Mode on Windows Prompt
 ---
 
-##Starting a Master (in terminal 1)
+## Starting a Master (in terminal 1)
 
 1. Navigate to c:\spark\bin directory
 2. Start the standalone master by running the command as below (Keep in mind the master url e.g. spark://IP:PORT)
