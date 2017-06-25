@@ -56,8 +56,8 @@ spark-class org.apache.spark.deploy.Client kill
 ```
 
 See more info:
-*<a href="https://blog.knoldus.com/2015/04/14/setup-a-apache-spark-cluster-in-your-single-standalone-machine/">Set up a apache spark cluster in your single standalone machine</a>
-*<a href="http://spark.apache.org/docs/latest/spark-standalone.html">Spark Standalone Mode</a>
+* <a href="https://blog.knoldus.com/2015/04/14/setup-a-apache-spark-cluster-in-your-single-standalone-machine/">Set up a apache spark cluster in your single standalone machine</a>
+* <a href="http://spark.apache.org/docs/latest/spark-standalone.html">Spark Standalone Mode</a>
 
 
 
