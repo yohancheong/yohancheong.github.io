@@ -15,7 +15,7 @@ spark-class org.apache.spark.deploy.master.Master
 {:start="3"}
 3. Check the web UI of spark standalong cluster at http://localhost:8080/ 
 
-##Starting a Worker (in terminal 2)
+## Starting a Worker (in terminal 2)
 
 1. Navigate to c:\spark\bin directory 
 2. Start a slave by running the command as below (Use the master url e.g. spark://192.168.0.5:7077)
@@ -25,7 +25,7 @@ spark-class org.apache.spark.deploy.worker.Worker spark://192.168.0.5:7077
 #spark-class org.apache.spark.deploy.worker.Worker --cores 2 --memory 4g spark://192.168.0.5:7077
 ```
 
-##Running Shell on Cluster Mode
+## Running Shell on Cluster Mode
 
 Run the command as below in the terminal
 
@@ -33,7 +33,7 @@ Run the command as below in the terminal
 pyspark --master spark://192.168.0.5:7077
 ```
 
-##Submitting a Job on Cluster Mode
+## Submitting a Job on Cluster Mode
 
 1. Navigate to the python file in the terminal
 
